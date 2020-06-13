@@ -7,7 +7,13 @@
 # Or you can just pull my own image
 # > docker pull shawnzaru/eprover
 #
-# And run as above.
+# And run like above
+# > docker run --rm -it -v ${PWD}/PROVER:/problems shawnzaru/eprover /problems/LUSK6.lop
+#
+# Or just test the local copy
+# > docker run --rm -it shawnzaru/eprover PROVER/LUSK6.lop
+#
+# TODO: minimize image size by basing on alpine linux.
 
 FROM ubuntu
 WORKDIR /E
