@@ -4,13 +4,15 @@
 # At the root directory of E, run this container as an executable by
 # > docker run --rm -it -v ${PWD}/PROVER:/problems eprover /problems/LUSK6.lop
 #
-# Or you can just pull my own image
+# The local root directory of E is now mounted as /problems in the container.
+#
+# If you don't want to build your own image, you can pull mine from DockerHub
 # > docker pull shawnzaru/eprover
 #
 # And run like above
 # > docker run --rm -it -v ${PWD}/PROVER:/problems shawnzaru/eprover /problems/LUSK6.lop
 #
-# Or just test the local copy
+# You can also test the container problem copy by
 # > docker run --rm -it shawnzaru/eprover PROVER/LUSK6.lop
 #
 # TODO: minimize image size by basing on alpine linux.
