@@ -2,7 +2,7 @@
 # Put this Dockerfile into that directory too.
 #
 # Build image
-# > docker build -t mizar
+# > docker build -t mizar .
 #
 # Run
 # > docker run --rm -it -v ${PWD}:/dir mizar mizf /dir/<path-to-local-miz-file>
