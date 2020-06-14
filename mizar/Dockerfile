@@ -1,4 +1,4 @@
-# Download the recent mizar linux tarball and put it into a clean directory.
+# Download the most recent mizar linux tarball and put it into a clean directory.
 # Put this Dockerfile into that directory too.
 #
 # Build image
