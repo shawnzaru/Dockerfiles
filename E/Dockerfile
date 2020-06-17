@@ -14,13 +14,13 @@
 #
 # You can also test run a container problem copy by
 # > docker run --rm -it shawnzaru/eprover PROVER/LUSK6.lop
-#
-# TODO: minimize image size by basing on alpine linux.
 
-FROM ubuntu
+FROM alpine:latest
 WORKDIR /E
 COPY . .
-RUN apt-get update && apt-get install -y build-essential
+RUN apk add --no-cache gcc libc-dev make
+# pycosat is not compatible with libc in alpine so a workaround here
+RUN echo "#include <unistd.h>" > /usr/include/sys/unistd.h
 RUN ./configure
 RUN make rebuild
 ENTRYPOINT ["PROVER/eprover"]
