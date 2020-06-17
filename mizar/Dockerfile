@@ -7,7 +7,7 @@
 # Run
 # > docker run --rm -it -v ${PWD}:/dir mizar mizf /dir/<path-to-local-miz-file>
 
-FROM ubuntu
+FROM alpine:latest
 WORKDIR /mizar
 COPY README               /mizar
 COPY install.sh           /mizar
