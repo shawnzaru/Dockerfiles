@@ -1,3 +1,5 @@
+# Installation of Mizar System Version 8.1.09 (Linux/FPC) (MML 5.59.1363)
+#
 # Download the most recent mizar linux tarball and put it into a clean directory.
 # Put this Dockerfile into that directory too.
 #
